@@ -4,7 +4,7 @@ Problem: [Link to the problem set](https://github.com/mountblue/javascript-full-
 
 This repo contains the solution of JS Drill: Cars of Mountblue JS Drill: Cars.
 
-# Checking the Solution
+## Checking the Solution
 
 Make sure you have `node.js` installed.
 
