@@ -3,8 +3,12 @@
 // "Last car is a *car make goes here* *car model goes here*"
 
 function problem2(inventory){
-    const lastCar = inventory[inventory.length - 1]; 
-    return  `Last car is a ${lastCar.car_make} ${lastCar.car_model}`
+    try {
+        const lastCar = inventory[inventory.length - 1]; 
+        return  `Last car is a ${lastCar.car_make} ${lastCar.car_model}`
+    } catch (error){
+        console.log(`Invalid input. ${error}`);
+    }
 }
 
 module.exports.problem2 = problem2;

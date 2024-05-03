@@ -3,10 +3,14 @@
 // "Car 33 is a *car year goes here* *car make goes here* *car model goes here*"
 
 function problem1(inventory, id){
-    for(const cars of inventory){
-        if(cars.id == id){
-            return `Car 33 is a ${cars.car_year} ${cars.car_make} ${cars.car_model}`
+    try {
+        for(const cars of inventory){
+            if(cars.id == id){
+                return `Car 33 is a ${cars.car_year} ${cars.car_make} ${cars.car_model}`
+            }
         }
+    } catch (error){
+        console.log(`Invalid input. ${error}`);
     }
 }
 
